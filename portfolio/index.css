@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0f0f1a;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+.custom-nav {
+  background: rgba(15, 15, 26, 0.9);
+  padding: 15px 0;
+}
+
+.nav-link {
+  color: white !important;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #00f7ff !important;
+}
+
+/* SECTIONS */
+.section {
+  min-height: 100vh;
+  padding: 140px 0 100px;
+}
+
+.section-title {
+  text-align: center;
+  color: #00f7ff;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.highlight {
+  color: #00f7ff;
+}
+
+/* BUTTONS */
+.btn-custom {
+  padding: 12px 30px;
+  border: 2px solid #00f7ff;
+  color: #00f7ff;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.btn-custom:hover {
+  background: #00f7ff;
+  color: #0f0f1a;
+  box-shadow: 0 0 20px #00f7ff;
+}
+
+/* PROFILE */
+.profile {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: 5px solid #00f7ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 30px #00f7ff;
+}
+
+.profile img {
+  width: 275px;
+  height: 275px;
+  border-radius: 50%;
+}
+
+/* SKILL BARS */
+.bar-skill {
+  margin-bottom: 25px;
+}
+
+.bar {
+  background: #141425;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 18px;
+  box-shadow: 0 0 10px rgba(0, 247, 255, 0.3);
+}
+
+.fill {
+  height: 100%;
+  background: #00f7ff;
+  border-radius: 20px;
+  box-shadow: 0 0 15px #00f7ff;
+  animation: fillBar 4s ease forwards infinite;
+}
+
+.fill.html { width: 90%; }
+.fill.css { width: 80%; }
+.fill.js { width: 85%; }
+.fill.java { width: 75%; }
+.fill.sql { width: 70%; }
+
+@keyframes fillBar {
+  from { width: 0; }
+}
+
+
+/* PROJECTS */
+.project-box {
+  background: #141425;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  transition: 0.3s;
+  border: 2px solid transparent;
+}
+
+.project-box:hover {
+  border-color: #00f7ff;
+  box-shadow: 0 0 20px #00f7ff;
+  transform: translateY(-10px);
+}
+
+/* CONTACT */
+.contact-form {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: 2px solid #00f7ff;
+  background: transparent;
+  color: white;
+  outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+.container{
+  justify-content: center;
+}
+.row{
+  justify-content: center;
+}
